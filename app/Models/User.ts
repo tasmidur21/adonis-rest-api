@@ -4,6 +4,9 @@ import Model from './Model'
 
 
 export default class User extends Model {
+  @column({ isPrimary: true })
+  public id: string
+  
   @column()
   public email: string
 

@@ -14,9 +14,6 @@ export default class Model extends compose(BaseModel, SoftDeletes) {
         });
     }
 
-    @column({isPrimary: true})
-    public id: string
-
     @column.dateTime({ autoCreate: true })
     public createdAt: DateTime
 
